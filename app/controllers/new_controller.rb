@@ -13,31 +13,33 @@ class NewController < ApplicationController
         @rolls.push(die)
       end
 
-      render({:template => "game_templates/dynamic"})
+      render({:template => "dice_template/dynamic"})
   end
 
     def num_1
 
-      render({:template => "game_templates/dice_1"})
+      render({:template => "dice_template/dice_1"})
     end
 
     def num_2
 
-      render({:template => "game_templates/dice_2"})
+      render({:template => "dice_template/dice_2"})
     end
 
 
     def num_3
 
-      render({:template => "game_templates/dice_3"})
+      render({:template => "dice_template/dice_3"})
     end
 
     def num_4
 
-      render({:template => "game_templates/dice_4"})
+      render({:template => "dice_template/dice_4"})
     end
 
     def homepage 
 
-      render({:template => "game_templates/home"})
+      render({:template => "dice_template/home"})
     end
+
+  end
