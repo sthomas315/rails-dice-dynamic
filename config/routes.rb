@@ -5,6 +5,6 @@ Rails.application.routes.draw do
   get("/dice/2/6", {:controller=> "new", :action => "num_2"})
   get("/dice/5/4", {:controller=> "new", :action => "num_3"})
   get("/dice/2/10", {:controller=> "new", :action => "num_4"})
-  get ("/"), {:controller => "new", :action => "homepage"})
+  get("/", {:controller => "new", :action => "homepage"})
 
 end
